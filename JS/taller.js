@@ -8,7 +8,7 @@ export default {
         return this.el.innerHTML;
     },
     setValue(p1){
-        this.el.insertAdjacentText("afterbegin", `El cilindro tiene las siguientes medidas  :   ${p1} `);
+        this.el.insertAdjacentText("afterbegin", `El orden de los numeros es  :   ${p1} `);
     },
     remove(){
         this.componente = document.createDocumentFragment();
@@ -58,17 +58,37 @@ export default {
 // cilindro dado su radio (R) y altura (H). Formula: (VOL = π * R^2 * H), 
 //(AREA_LATERAL = 2 * π * R * H)
 
-export function cilindro(radio,altura) {
-    const sp1=document.querySelector("#radio");
-    sp1.insertAdjacentText("beforeend",`Radio: ${radio}`);
+// export function cilindro(radio,altura) {
+//     const sp1=document.querySelector("#radio");
+//     sp1.insertAdjacentText("beforeend",`Radio: ${radio}`);
 
-    const sp2=document.querySelector("#altura");
-    sp2.insertAdjacentText("beforeend", ` - Altura ${altura}`);
+//     const sp2=document.querySelector("#altura");
+//     sp2.insertAdjacentText("beforeend", ` - Altura ${altura}`);
 
-        const volumen= Math.PI * Math.pow(radio,2) * altura;
+//         const volumen= Math.PI * Math.pow(radio,2) * altura;
 
-    const areaLateral= 2 * Math.PI * radio * altura;
+//     const areaLateral= 2 * Math.PI * radio * altura;
 
-    return ` \r\n El volumen: ${volumen} Area Lateral: ${areaLateral}`
+//     return ` \r\n El volumen: ${volumen} Area Lateral: ${areaLateral}`
     
+// }
+
+//EJERCICIO 4
+
+// 4.	"Desarrolle un algoritmo que perma leer dos números 
+//      y ordenarlos de menor a mayor,si es el caso."
+
+export function ordenar(num1,num2) {
+    const sp1=document.querySelector("#numero1")
+    sp1.insertAdjacentText("beforebegin",`primer numero: ${num1}`)
+    
+    const sp2=document.querySelector("#numero2")
+    sp2.insertAdjacentText("beforebegin",`segundo numero: ${num2}`)
+
+    if(num1<=num2){
+        return `${num1} -  ${num2}`
+    }else{
+        return `${num2} -  ${num1}`
+
+    }
 }

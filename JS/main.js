@@ -1,3 +1,8 @@
-import valordefecto, { cilindro } from './taller.js'
+import valordefecto, { ordenar } from './taller.js'
 
-valordefecto.setValue(cilindro(9,12))
+
+let num1=prompt("ingrese un numero por favor")
+let num2=prompt("ingrese un numero por favor")
+
+
+valordefecto.setValue(ordenar(num1,num2))
