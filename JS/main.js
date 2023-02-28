@@ -1,3 +1,3 @@
-import valordefecto, { hipotenusa } from './taller.js'
+import valordefecto, { cilindro } from './taller.js'
 
-valordefecto.setValue(hipotenusa(9,12))
+valordefecto.setValue(cilindro(9,12))
