@@ -1,5 +1,3 @@
-import main from './taller.js'
-import {suma} from "./taller.js"
+import valordefecto, { hipotenusa } from './taller.js'
 
-
-main.setValue(suma())
+valordefecto.setValue(hipotenusa(9,12))
